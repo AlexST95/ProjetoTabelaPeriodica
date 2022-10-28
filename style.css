@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: white;
+	text-align: center;
+}
+
+/* CORES ELEMENTOS */
+.nao-metal {
+	background-color: #b3d76a;
+}
+
+.gas-nobre {
+	background-color: #67afde;
+}
+
+.metal-alcalino {
+	background-color: #f5c95e;
+}
+
+.metal-alcalino-terroso {
+	background-color: #efe55b;
+}
+
+.semimetal {
+	background-color: #66c4bc;
+}
+
+.halogenio {
+	background-color: #a7dff3;
+}
+
+.outros-metais {
+	background-color: #a2c6d2;
+}
+
+.metal-transicao {
+	background-color: #f2b0b0;
+}
+
+.lantanideo {
+	background-color: #97d7e1;
+}
+
+.actinidio {
+	background-color: #e2bdd8;
+}
+
+/* Tamanhos fontes */
+h1 {
+	font-size: 70px;
+	font-weight: 100;
+	color: black;
+}
+
+h2 {
+	font-size: 2em;
+	color: black;
+}
+
+h3 {
+    font-size: 12px;
+	font-weight: 100;
+	color: black;
+}
+
+/* GRID CONTAINER STYLES */
+main {
+	margin: auto;
+	max-width: 45em;
+	display: flex;
+}
+
+.col-hidden {
+	display: none;
+}
+
+/* GRID CELL */
+section {
+	height: 7em;
+	background: var(--bg-preto);
+	border: .125rem solid;
+	border-radius: .25rem;
+	line-height: 1.25;
+	margin-bottom: .5em;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+span {
+	font-size: .90em;
+	position: absolute;
+	top: .3em;
+	left: .5em;
+	color: black;
+}
+
+footer {
+	font-size: .8em;
+	text-align: left;
+	flex-basis: 13.5rem;
+}
+
+ul {
+	display: flex;
+	flex-wrap: wrap;
+	position: sticky;
+}
+
+li {
+	flex-basis: 100%;
+	line-height: 1;
+	margin-bottom: 1em;
+}
+
+li:before {
+	content: '';
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	border: .1em solid;
+	border-radius: .125rem;
+	position: relative;
+	top: .20em;
+}
+
+/* GLOBAL STYLES */
+
+body {
+	font-size: 100%;
+	padding: 10px;
+}
+
+
+/* GRID CONTAINER STYLES */
+
+main {
+	max-width: 130.5em;
+	display: block;
+}
+
+#grid-container {
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(18, 80px);
+	grid-gap: 3px;
+}
+
+.col-span11 {
+	grid-column: span 11;
+}
+
+.col-span10 {
+	grid-column: span 10;
+}
+
+.col-span3 {
+	grid-column: span 3;
+}
+
+.col-hidden {
+	display: block;
+	visibility: hidden;
+}
+.edit-link {
+	text-decoration: none;
+}
+
+
+/* GRID CELL */
+
+section {
+	margin: 0;
+}
+
+section:hover {
+	transition: .2s;
+	transform: scale(1.5);
+	cursor: pointer;
+	z-index: 2;
+}
+
+
+/* FOOTER */
+
+footer {
+	font-size: 1em;
+	width: 100%;
+	margin: 2em 0;
+}
+
+ul {
+	justify-content: center;
+}
+
+li {
+	flex-basis: auto;
+	margin-bottom: 0;
+}
+
+li+li {
+	margin-left: 2em;
+}
+
+body {
+	font-size: .75em;
+}
+
+/*DADOS TABELA*/
+
+.dados-tabela {
+	background-color: rgb(226, 226, 226);
+}
+
+.legenda-tabela {
+	border: none;
+	font-size: 9px;
+}
