@@ -75,18 +75,13 @@ h3 {
 /* GRID CONTAINER STYLES */
 main {
 	margin: auto;
-	max-width: 45em;
-	display: flex;
-}
-
-.col-hidden {
-	display: none;
+	max-width: 130.5em;
+	display: block;
 }
 
 /* GRID CELL */
 section {
 	height: 7em;
-	background: var(--bg-preto);
 	border: .125rem solid;
 	border-radius: .25rem;
 	line-height: 1.25;
@@ -95,6 +90,7 @@ section {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin: 0;
 }
 
 span {
@@ -137,16 +133,8 @@ li:before {
 /* GLOBAL STYLES */
 
 body {
-	font-size: 100%;
 	padding: 10px;
-}
-
-
-/* GRID CONTAINER STYLES */
-
-main {
-	max-width: 130.5em;
-	display: block;
+	font-size: .75em;
 }
 
 #grid-container {
@@ -172,16 +160,9 @@ main {
 	display: block;
 	visibility: hidden;
 }
-.edit-link {
-	text-decoration: none;
-}
 
 
 /* GRID CELL */
-
-section {
-	margin: 0;
-}
 
 section:hover {
 	transition: .2s;
@@ -212,9 +193,6 @@ li+li {
 	margin-left: 2em;
 }
 
-body {
-	font-size: .75em;
-}
 
 /*DADOS TABELA*/
 
